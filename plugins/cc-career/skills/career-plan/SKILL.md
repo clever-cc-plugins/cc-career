@@ -105,31 +105,50 @@ and scope:
 ## Step 4: Generate
 
 Apply Career Anchors and the Skill-Will Matrix from
-`../_shared/career-planning-frameworks.md`. **State each choice before generating.**
-Example:
+`../_shared/career-planning-frameworks.md`. If the direction points outside the
+person's current role or employer, also apply Job Crafting from the same file — it
+checks whether the current role can be reshaped before committing to a switch.
+**State each choice before generating.** Example:
 
 > "Using Career Anchors to set direction; Skill-Will Matrix to sequence near-term
 > development."
 
 Produce a career plan that includes:
 
-- **Career Anchor** — the inferred dominant anchor and one sentence of supporting
-  evidence, with a note if the stated goal pulls against it.
-- **Direction statement** — the target role or trajectory this plan aims at.
+- **Career Anchor(s)** — 1-3 candidate anchors (most people carry more than one) with
+  one sentence of supporting evidence each, and a note if the stated goal pulls
+  against any of them.
+- **Direction statement** — the target role or trajectory this plan aims at. If Job
+  Crafting applied, note any current-role redesign option it surfaced alongside the
+  direction (not as a substitute for it, unless the person indicates otherwise).
 - **Prioritized skills** — 3-6 candidate skills plotted and sequenced per the
   Skill-Will Matrix (near-term first, delegate-or-drop items noted separately).
-- **Milestones** — at least three, each tied to a rough timeframe consistent with the
-  loaded goals.
+- **Milestones** — at least three. Each milestone states:
+  - a timeframe consistent with the loaded goals — split anything past ~12 months
+    into a nearer checkpoint plus the distal target, since a milestone that's too far
+    out stops driving near-term action;
+  - whether it's a **learning milestone** (building an unfamiliar skill — set the bar
+    on effort and strategy discovery, not a fixed outcome) or a **performance
+    milestone** (executing something already mastered — set the bar on the outcome
+    itself); this keeps early, unfamiliar work from being graded as harshly as
+    practiced work;
+  - a concrete trigger for starting it, in "if [cue], then [action]" form — a
+    milestone without a specific cue tends to stay an intention rather than become
+    action.
+- **Review cadence** — one line recommending how often to revisit the plan (e.g.
+  monthly at first, quarterly once milestones are underway). This is what
+  `career-performance-review` uses to pace itself against.
 
 ## Step 5-6: Quality check and delimited output
 
 Review the generated plan for:
 
-- **Completeness**: All four elements above are present (Career Anchor, direction
-  statement, prioritized skills, milestones).
-- **Milestone count**: At least three milestones are listed.
+- **Completeness**: All five elements above are present (Career Anchor(s), direction
+  statement, prioritized skills, milestones, review cadence).
+- **Milestone count and shape**: At least three milestones are listed, and each has a
+  timeframe, a learning-vs-performance label, and an if-then trigger.
 - **Consistency**: The prioritized skills and milestones both serve the stated
-  direction; nothing pulls against the identified Career Anchor without a flag.
+  direction; nothing pulls against an identified Career Anchor without a flag.
 
 Fix any gaps before proceeding.
 
@@ -175,7 +194,7 @@ Confirm the file was created, then add a row to the `## Context files` table in
 `CLAUDE.md`. Use this format:
 
 ```markdown
-| Career plan | `context/career-plan.md` | Career direction, Career Anchor, prioritized skills, and milestone timeline |
+| Career plan | `context/career-plan.md` | Career direction, Career Anchor(s), prioritized skills, milestone timeline with triggers, and review cadence |
 ```
 
 The Summary must be semantic and describe what the file covers — use keywords so

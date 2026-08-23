@@ -28,13 +28,13 @@ Status: v1 skills implemented, not yet registered in the marketplace catalog. Se
 Project-scope context files registered by cc-career skills. Register new context
 files by running `/career-onboarding` or by adding them manually to this table.
 
-| Label                      | Path                                    | Summary                                                                              |
-| -------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------ |
-| Career background          | `context/career-background.md`          | Current role, industry, experience, responsibilities, what's felt satisfying vs. not |
-| Career goals               | `context/career-goals.md`               | Target direction, timeframe, and what's driving the goal                             |
-| Career plan                | `context/career-plan.md`                | Career direction, Career Anchor, prioritized skills, and milestone timeline          |
-| Personal branding strategy | `context/personal-branding-strategy.md` | Personal brand Why/How/What, Personal SWOT, and content themes                       |
-| Career performance review  | `context/career-performance-review.md`  | Verdicts on which career-plan milestones were hit, missed, or in progress            |
+| Label                      | Path                                    | Summary                                                                                                      |
+| -------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Career background          | `context/career-background.md`          | Current role, industry, experience, responsibilities, what's felt satisfying vs. not                         |
+| Career goals               | `context/career-goals.md`               | Target direction, timeframe, and what's driving the goal                                                     |
+| Career plan                | `context/career-plan.md`                | Career direction, Career Anchor(s), prioritized skills, milestone timeline with triggers, and review cadence |
+| Personal branding strategy | `context/personal-branding-strategy.md` | Personal brand Why/How/What, Personal SWOT, and content themes                                               |
+| Career performance review  | `context/career-performance-review.md`  | Verdicts on which career-plan milestones were hit, missed, or in progress                                    |
 
 ## References
 
