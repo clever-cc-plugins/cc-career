@@ -103,9 +103,10 @@ Consult the brief in `$ARGUMENTS`, if present. Set branding depth and scope:
 
 ## Step 4: Generate
 
-Select a framework from `../_shared/personal-branding-frameworks.md` following that
-file's selection process — usually both apply together. **State each choice before
-generating.** Example:
+Select frameworks from `../_shared/personal-branding-frameworks.md` following that
+file's selection process — Golden Circle and Personal SWOT are the default pair; add
+Strategic Authenticity Calibration if the draft reads generic or overexposed. **State
+each choice before generating.** Example:
 
 > "Using the Golden Circle to draft the brand message; Personal SWOT to stress-test
 > it."
@@ -113,26 +114,46 @@ generating.** Example:
 If a `career-plan` output is loaded (checked at Step 1), use its Career Anchor
 finding directly as the Why's foundation rather than re-deriving it from scratch.
 
+Golden Circle's how-to-apply opens by naming the target audience — a specific role
+or niche, not "people online." If the loaded career goals don't already make this
+clear, ask one direct question inline (e.g. "Who is this brand for — hiring
+managers in a specific niche, peers, potential clients?") rather than assuming.
+This is not a third gated need: fold the answer into Step 4's generation, don't
+add a Step 2 gate or a third `⚠ DEGRADED` category for it. If the answer is
+unusable — declined, too vague ("everyone in tech"), or career goals itself came
+back degraded and left nothing to draw on — infer a provisional target audience
+from whatever career background and goals are loaded, and label it explicitly as
+an assumption to confirm (e.g. "Target audience (assumed, confirm this):
+engineering managers hiring for platform roles"). Never leave it blank.
+
 Generate a personal-branding-strategy document that includes:
 
-- **Why** — the belief or purpose driving the work (not a job title).
+- **Target audience** — the specific role, niche, or decision-maker this brand
+  speaks to, and the problem or question they have that this person can credibly
+  answer.
+- **Why** — the belief or purpose driving the work (not a job title), grounded in
+  who has to find it credible.
 - **How** — the distinctive approach or lens.
 - **What** — current and near-term visible output (roles, projects, content types),
   each checked against the Why.
 - **Personal SWOT** — Strengths, Weaknesses, Opportunities, Threats per the
-  framework's how-to-apply steps.
+  framework's how-to-apply steps, differentiated against named peer/competitor
+  archetypes where relevant.
 - **Key themes** — 2-4 content themes derived from where a Strength meets an
   Opportunity, phrased so `cc-content` skills can use them directly (e.g. "industry
-  war stories with a technical lens," not "be more visible").
+  war stories with a technical lens," not "be more visible"). Note the disclosure
+  register from Strategic Authenticity Calibration if that framework was applied
+  (e.g. "mostly hands-on expertise, occasional named lesson-learned").
 
 ## Step 5-6: Quality check and delimited output
 
 Review the generated document for:
 
-- **Completeness**: All five elements above are present (Why, How, What, Personal
+- **Completeness**: All six elements above are present — or the in-scope subset of
+  them, for a narrow brief per Step 3 (Target audience, Why, How, What, Personal
   SWOT, key themes).
-- **Traceability**: Every item under What traces back to the Why; no theme
-  overclaims past a named Weakness.
+- **Traceability**: Every item under What traces back to the Why; the Why traces
+  back to the target audience; no theme overclaims past a named Weakness.
 - **Specificity**: Themes are phrased concretely enough for a content skill to use
   without further interpretation.
 
