@@ -2,7 +2,7 @@
 
 A Claude Code plugin for career planning, upleveling, and personal-branding strategy.
 
-Status: v1 skills implemented, not yet registered in the marketplace catalog. See
+Status: v1 skills implemented and registered in the marketplace catalog. See
 `docs/superpowers/specs/2026-08-18-cc-career-design.md` for the design.
 
 ## Key Config Files
