@@ -5,6 +5,8 @@
   </picture>
 </p>
 
+<img src="assets/icon.svg" align="right" width="96" height="96" alt="cc-career icon" />
+
 # cc-career
 
 A [Claude Code](https://claude.ai/code) plugin for career planning, upleveling, and personal-branding strategy — the cc-concept role, but for your own career instead of a company's marketing.
