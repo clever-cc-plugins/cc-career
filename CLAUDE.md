@@ -11,13 +11,12 @@ Status: v1 skills implemented and registered in the marketplace catalog. See
 | -------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | `.claude/format-markdown.sh`                                   | PostToolUse hook: formats Markdown files with prettier after edits         |
 | `.claude/guard-secret-files.sh`                                | PreToolUse hook: blocks reads/edits/writes of secret .env files            |
-| `.claudeignore`                                                | Paths excluded from Claude Code indexing                                   |
 | `CLAUDE.md`                                                    | Project instructions, loaded every message                                 |
 | `.claude/settings.json`                                        | Permissions, hooks, environment variables                                  |
 | `.githooks/pre-commit`                                         | Secret scanning (gitleaks) + CLAUDE.md table sync                          |
-| `.github/workflows/claude-code-review.yml`                     | TODO: add description                                                      |
-| `.github/workflows/claude.yml`                                 | TODO: add description                                                      |
-| `.github/workflows/release.yml`                                | TODO: add description                                                      |
+| `.github/workflows/claude-code-review.yml`                     | Claude review of PRs from trusted authors                                  |
+| `.github/workflows/claude.yml`                                 | Responds to @claude mentions from trusted authors                          |
+| `.github/workflows/release.yml`                                | Release via the shared org plugin-release workflow on push to main         |
 | `.gitignore`                                                   | Git ignore patterns                                                        |
 | `plugins/cc-career/.claude-plugin/plugin.json`                 | Plugin manifest                                                            |
 | `plugins/cc-career/skills/career-onboarding/SKILL.md`          | Skill: Collect career background and goals context via interview           |
@@ -27,6 +26,8 @@ Status: v1 skills implemented and registered in the marketplace catalog. See
 | `scripts/sync-config-table.sh`                                 | Keeps Key Config Files table in sync on each commit                        |
 
 ## Context files
+
+<!-- cc-config: context-toc-registered -->
 
 Project-scope context files registered by cc-career skills. Register new context
 files by running `/career-onboarding` or by adding them manually to this table.
@@ -41,8 +42,7 @@ files by running `/career-onboarding` or by adding them manually to this table.
 
 ## References
 
-@docs/superpowers/specs/2026-08-18-cc-career-design.md **Read when:** planning or
-implementing skills for this plugin
+`docs/superpowers/specs/2026-08-18-cc-career-design.md` — **Read when:** planning or implementing skills for this plugin
 
 ## Conventions
 
@@ -63,3 +63,5 @@ summary to `.claude/learnings.md`. Don't modify `CLAUDE.md` directly.
 ## Compact Instructions
 
 When compacting, preserve: list of modified files, current test status, open TODOs, and key decisions made.
+
+<!-- cc-config: last-optimize-run: 2026-11-05 c68257ba47e57d12b18a3c59227eae26fe502128 -->
