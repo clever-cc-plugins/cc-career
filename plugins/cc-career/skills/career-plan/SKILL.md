@@ -23,7 +23,7 @@ below add only career-plan-specific behavior.
 
 ## Step 0-1: Recall learnings and load context
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, apply framework preferences, rejected directions, or constraints discovered in prior runs.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to framework preferences, rejected directions, or constraints discovered in prior runs.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against
 the **Summary** column semantically — never against a label or filename:

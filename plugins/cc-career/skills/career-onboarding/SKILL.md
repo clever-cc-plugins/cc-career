@@ -26,7 +26,7 @@ single artifact.)
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, apply path preferences, rejected interview answers, or constraints discovered in prior runs.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to path preferences, rejected interview answers, or constraints discovered in prior runs.
 
 ## Step 1: Discover existing context
 

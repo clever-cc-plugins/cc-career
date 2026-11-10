@@ -27,7 +27,7 @@ than gating on background/goals needs.
 
 ## Step 0: Recall learnings
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, apply prior review scope choices.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to prior review scope choices.
 
 ## Step 1: Load the plan
 

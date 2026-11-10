@@ -57,8 +57,8 @@ files by running `/career-onboarding` or by adding them manually to this table.
 
 ## Learnings
 
-When the user corrects a mistake or points out a recurring issue, append a one-line
-summary to `.claude/learnings.md`. Don't modify `CLAUDE.md` directly.
+When the user corrects a mistake or points out a recurring issue, record a one-line
+summary in `.claude/learnings.md` by `plugins/cc-career/skills/_shared/learnings-protocol.md`: add a source marker, and replace a contradicted entry instead of appending a second one. Don't modify `CLAUDE.md` directly.
 
 ## Compact Instructions
 

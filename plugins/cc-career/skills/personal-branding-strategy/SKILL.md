@@ -24,7 +24,7 @@ below add only branding-specific behavior.
 
 ## Step 0-1: Recall learnings and load context
 
-Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, apply branding preferences, rejected framings, or discovered constraints.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to branding preferences, rejected framings, or discovered constraints.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against
 the **Summary** column semantically — never against a label or filename:
