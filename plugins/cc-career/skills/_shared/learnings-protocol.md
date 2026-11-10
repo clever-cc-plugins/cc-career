@@ -25,17 +25,17 @@ Before any other work, read `.claude/learnings.md` in full if it exists. Apply t
 
 ## Writing
 
-Record what a future run on this project would need and could not read from the request, `CLAUDE.md` or the context files: preferences, constraints, project facts, corrections, and non-default choices the user accepted. Do not record standard behaviour applied without deviation, details that only mattered for this run, or anything an existing entry already says. Prefer one precise entry over several partial ones. When in doubt, skip.
+Record what a future run on this project would need and could not read from the request, `CLAUDE.md` or the context files: preferences, constraints, project facts, corrections, and non-default choices the user accepted. Do not record standard behaviour applied without deviation, details that only mattered for this run, or anything an existing entry already says. Prefer one precise entry over several partial ones. State inside the observation what it applies to (a format, channel, skill or the whole project), and treat two entries as contradicting each other only when their scopes overlap: a LinkedIn rule about hashtags does not contradict an Instagram one. When in doubt, skip.
 
 Before writing, compare the new observation with every existing entry, under any tag:
 
 1. **An equivalent entry exists:** write nothing. If the new source is stronger (`stated` or `corrected` over `inferred`), update that entry's source and date in place instead.
 2. **The observation contradicts or updates an existing entry:**
    - New source `stated` or `corrected`, or both `inferred`: replace the old line in place with the new entry. The new line carries the current skill's tag, even if the old line had another tag. This is intended: the entry now belongs to the plugin that last confirmed it, so a review that filters by its own plugin's tags sees it only from then on (`auditing-config` reads every tag).
-   - New source `inferred`, old entry `stated`, `corrected` or unmarked: keep the old entry and write nothing. If this run gave real reason to doubt it, ask the user before changing anything.
+   - New source `inferred`, old entry `stated`, `corrected` or unmarked: keep the old entry and write nothing. If this run gave real reason to doubt it, raise it in the feedback step; if the user confirms the change, replace the old entry with the new one, source `stated` or `corrected`. If you cannot ask, keep the old entry.
 3. **Otherwise:** append the new entry at the end of the file.
 
-Locate a line you replace or update by its full text, so the edit cannot hit a similar line. Never leave two entries in the file that contradict each other.
+Locate a line you replace or update by its full text, so the edit cannot hit a similar line, and change no file other than `.claude/learnings.md`. Never leave two entries in the file that contradict each other.
 
 If the file does not exist, create it with this header first:
 
@@ -69,5 +69,5 @@ Review skills (`session-wrap`, `learnings-promotion`, `auditing-config`) consoli
 3. Propose one action per group or single entry, stating the entry count, the sources and a one-line reason:
    - **Promote:** a standing rule. That is any `stated` or `corrected` entry, or a group of agreeing `inferred` entries that you judge still relevant and likely true; say why, because repetition alone does not make an inference true. For an unmarked entry the source is unknown: judge from its wording whether the user said it, and say so in the proposal. Frequency is a signal, not a threshold: one stated rule can qualify, and three unconfirmed inferences can still be wrong. Choose the narrowest target that reaches every run needing the rule: a skill's guidelines, a context file or a voice guide before `CLAUDE.md`, which every session loads.
    - **Keep:** still true and useful, but not yet a standing rule. Typically a single `inferred` entry.
-   - **Retire:** already covered by `CLAUDE.md` or a context file (name the file), contradicted by one of them, superseded by a newer entry, or tied to a situation that is over.
+   - **Retire:** already covered by `CLAUDE.md` or a context file (name the file), contradicted by one of them, superseded by a newer entry, or tied to a situation that is over. Never retire a `corrected` or `stated` entry only because a file contradicts it: if the file is the one that is out of date, propose updating the file and keep the entry until the user has decided.
 4. Apply nothing before the user decides each proposal: promote, keep or retire. Remove promoted and retired entries from `.claude/learnings.md`; leave kept entries unchanged. When no entries remain below the header, delete the file, or leave only the header if you cannot delete files.
