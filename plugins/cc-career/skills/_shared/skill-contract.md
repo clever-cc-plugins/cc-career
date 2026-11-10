@@ -7,9 +7,7 @@ what it gates on, what it generates, and where it writes.
 
 ## The sequence
 
-0. **Recall learnings** (silent) — read `.claude/learnings.md` if present, across
-   all plugin tags. Apply relevant observations. Never announce this step; surface
-   nothing unless it changes behavior.
+0. **Recall learnings** (silent) — read `learnings-protocol.md` in this `_shared/` folder and follow its **Recall** section.
 1. **Load context** — read the `## Context files` table in `CLAUDE.md`. Match needs
    against the **Summary** column semantically — never against a label or filename.
 2. **Gating check** — confirm the skill has the context it needs. Warn only on the
@@ -25,5 +23,4 @@ what it gates on, what it generates, and where it writes.
    shown. Draft first for quality, enforce the checklist second — don't fold the two
    together.
 6. **Delimited output** — return the artifact inside clear delimiters.
-7. **Two-phase feedback** — auto-store lightweight learnings (tagged
-   `[cc-career:<skill-name>]`); ask before promoting anything heavier.
+7. **Two-phase feedback** — read `learnings-protocol.md` in this `_shared/` folder and follow its **Writing** section: auto-store qualifying observations tagged `[<plugin>:<skill-name>]` (source `inferred` unless the user said it), then ask for feedback and record any correction with source `corrected`. Finish with the protocol's **Confirming** section. Ask before promoting anything heavier.

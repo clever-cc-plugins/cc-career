@@ -23,9 +23,7 @@ below add only career-plan-specific behavior.
 
 ## Step 0-1: Recall learnings and load context
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, framework preferences, rejected directions, or constraints discovered in
-prior runs. Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, apply framework preferences, rejected directions, or constraints discovered in prior runs.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against
 the **Summary** column semantically — never against a label or filename:
@@ -203,11 +201,11 @@ The Summary must be semantic and describe what the file covers — use keywords 
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-career:career-plan]` in `.claude/learnings.md`. Examples:
+Store learnings per the contract's Step 7, tagged `[cc-career:career-plan]`. Examples:
 
 ```
-[cc-career:career-plan] user rejected the management-track anchor inference, confirmed Technical/Functional instead — 2026-08-18
-[cc-career:career-plan] user wants milestones expressed as quarter offsets (Q1, Q2) rather than calendar dates — 2026-08-18
+[cc-career:career-plan] user rejected the management-track anchor inference, confirmed Technical/Functional instead (corrected) — 2026-08-18
+[cc-career:career-plan] user wants milestones expressed as quarter offsets (Q1, Q2) rather than calendar dates (stated) — 2026-08-18
 ```
 
 If the session revealed a rejected inference, framework preference, or constraint

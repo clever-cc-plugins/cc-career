@@ -24,9 +24,7 @@ below add only branding-specific behavior.
 
 ## Step 0-1: Recall learnings and load context
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, branding preferences, rejected framings, or discovered constraints. Do
-not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. In particular, apply branding preferences, rejected framings, or discovered constraints.
 
 Read the `## Context files` table in `CLAUDE.md`. Match the following needs against
 the **Summary** column semantically — never against a label or filename:
@@ -212,12 +210,11 @@ sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-career:personal-branding-strategy]` in
-`.claude/learnings.md`. Examples:
+Store learnings per the contract's Step 7, tagged `[cc-career:personal-branding-strategy]`. Examples:
 
 ```
-[cc-career:personal-branding-strategy] user rejected "thought leader" framing, prefers "practitioner sharing what works" — 2026-08-18
-[cc-career:personal-branding-strategy] user's Weakness (limited public speaking history) means themes should lean written content first — 2026-08-18
+[cc-career:personal-branding-strategy] user rejected "thought leader" framing, prefers "practitioner sharing what works" (corrected) — 2026-08-18
+[cc-career:personal-branding-strategy] user's Weakness (limited public speaking history) means themes should lean written content first (inferred) — 2026-08-18
 ```
 
 If the session revealed a rejected framing, theme preference, or constraint that
