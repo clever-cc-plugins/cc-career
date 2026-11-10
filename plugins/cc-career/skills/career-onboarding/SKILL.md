@@ -26,9 +26,7 @@ single artifact.)
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, path preferences, rejected interview answers, or constraints discovered
-in prior runs. Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to path preferences, rejected interview answers, or constraints discovered in prior runs.
 
 ## Step 1: Discover existing context
 
@@ -149,12 +147,11 @@ hand-edit the **Key Config Files** table — the pre-commit hook owns that sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-career:career-onboarding]` in `.claude/learnings.md`. For
-example:
+Store learnings per the contract's Step 7, tagged `[cc-career:career-onboarding]`. Examples:
 
 ```
-[cc-career:career-onboarding] user prefers "uplevel" over "promotion" when framing goals — 2026-08-18
-[cc-career:career-onboarding] career-goals interview should ask about timeframe constraints up front, not as a follow-up — 2026-08-18
+[cc-career:career-onboarding] user prefers "uplevel" over "promotion" when framing goals (stated) — 2026-08-18
+[cc-career:career-onboarding] career-goals interview should ask about timeframe constraints up front, not as a follow-up (corrected) — 2026-08-18
 ```
 
 If the session revealed a rejected answer, path preference, or constraint that future

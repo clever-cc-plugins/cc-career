@@ -27,9 +27,7 @@ than gating on background/goals needs.
 
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — in
-particular, prior review scope choices. Do not announce this step. If the file is
-absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Pay particular attention to prior review scope choices.
 
 ## Step 1: Load the plan
 
@@ -132,12 +130,11 @@ hand-edit the **Key Config Files** table — the pre-commit hook owns that sync.
 
 ## Step 7: Feedback
 
-Store learnings tagged `[cc-career:career-performance-review]` in
-`.claude/learnings.md`. Examples:
+Store learnings per the contract's Step 7, tagged `[cc-career:career-performance-review]`. Examples:
 
 ```
-[cc-career:career-performance-review] user's milestones consistently slip by about one quarter; account for that when re-planning — 2026-08-18
-[cc-career:career-performance-review] user prefers reviewing quarterly, not per-milestone as they land — 2026-08-18
+[cc-career:career-performance-review] user's milestones consistently slip by about one quarter; account for that when re-planning (inferred) — 2026-08-18
+[cc-career:career-performance-review] user prefers reviewing quarterly, not per-milestone as they land (stated) — 2026-08-18
 ```
 
 If the session revealed a review-scope preference or a recurring pattern in how
