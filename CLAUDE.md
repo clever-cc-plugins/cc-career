@@ -64,4 +64,4 @@ summary in `.claude/learnings.md` by `plugins/cc-career/skills/_shared/learnings
 
 When compacting, preserve: list of modified files, current test status, open TODOs, and key decisions made.
 
-<!-- cc-config: last-optimize-run: 2026-11-05 c68257ba47e57d12b18a3c59227eae26fe502128 -->
+<!-- cc-config: last-optimize-run: 2026-11-12 76eab4bb3619673f9987f471bdb852548e5740c1 -->
